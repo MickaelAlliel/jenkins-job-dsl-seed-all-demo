@@ -5,5 +5,6 @@ def test = "myTest"
 job('hello_world') {
   steps {
     shell('echo "Hello World!"')
+    println("More Hello World")
   }
 }
