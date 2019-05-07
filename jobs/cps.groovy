@@ -1,7 +1,7 @@
-pipelineJob('cpsTest') {
+pipelineJob('WorkflowScript') {
     definition {
         cps {
-            script(readFileFromWorkspace('jobs/cpsTest.Jenkinsfile'))
+            script(readFileFromWorkspace('jobs/WorkflowScript.Jenkinsfile'))
             sandbox()
         }
     }
