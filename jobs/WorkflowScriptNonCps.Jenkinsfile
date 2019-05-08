@@ -1,5 +1,5 @@
-@NonCPS
 node {  
+    @NonCPS
     stage("Stage One") {
         println(this.class.name)
         sh "echo 1"
@@ -8,6 +8,6 @@ node {
     }
 
     stage("Stage Two") {
-        stageTwo()
+        println "hello"
     }
 }
