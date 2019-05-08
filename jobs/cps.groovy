@@ -7,7 +7,7 @@ pipelineJob('WorkflowScript') {
     }
 }
 
-pipelineJob('WorkflowScript') {
+pipelineJob('WorkflowScriptNonCps') {
     definition {
         cps {
             script(readFileFromWorkspace('jobs/WorkflowScriptNonCps.Jenkinsfile'))
