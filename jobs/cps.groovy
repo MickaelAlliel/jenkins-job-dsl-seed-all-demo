@@ -6,3 +6,12 @@ pipelineJob('WorkflowScript') {
         }
     }
 }
+
+pipelineJob('WorkflowScript') {
+    definition {
+        cps {
+            script(readFileFromWorkspace('jobs/WorkflowScriptNonCps.Jenkinsfile'))
+            sandbox()
+        }
+    }
+}
