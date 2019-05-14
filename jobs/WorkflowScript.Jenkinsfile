@@ -10,9 +10,9 @@ node {
 
 @NonCPS
 def stageOne() {
-    println(Class.getResource(this.class.name))
+    println(Class.getResource(this.class.name + ".class"))
     sh("echo 1")
-    println(Class.getResource(this.class.name))
+    println(Class.getResource(this.class.name + ".class"))
     println(this.class.name)
     int num = 1
     println num
