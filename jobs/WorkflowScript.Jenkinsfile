@@ -24,6 +24,7 @@ def stageOne() {
 def stageTwo() {
 
 
+    int num = 2
     print(num)
     sh("echo 2")
 }
