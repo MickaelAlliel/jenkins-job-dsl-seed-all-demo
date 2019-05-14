@@ -10,9 +10,20 @@ node {
 
 @NonCPS
 def stageOne() {
-    println(Class.getResource(this.class.name + ".class"))
+    clazz = Class.forName("ClosureFactory");
+    clozure = clazz.newInstance().getClosure();
+    clozureClass = clozure.getClass();
+    bytes = clozureClass.getProtectionDomain().getCodeSource().getLocation().getBytes();
+    println "Class [Name:${clozureClass.getName()}] Bytes:${bytes.length} Interfaces: ${clozureClass.getInterfaces()}";
+
     sh("echo 1")
-    println(Class.getResource(this.class.name + ".class"))
+
+    clazz = Class.forName("ClosureFactory");
+    clozure = clazz.newInstance().getClosure();
+    clozureClass = clozure.getClass();
+    bytes = clozureClass.getProtectionDomain().getCodeSource().getLocation().getBytes();
+    println "Class [Name:${clozureClass.getName()}] Bytes:${bytes.length} Interfaces: ${clozureClass.getInterfaces()}";
+
     println(this.class.name)
     int num = 1
     println num
