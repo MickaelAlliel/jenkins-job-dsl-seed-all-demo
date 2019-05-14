@@ -10,7 +10,7 @@ node {
 
 @NonCPS
 def stageOne() {
-    clazz = Class.forName(this.class.name);
+    clazz = this.getClass();
     clozure = clazz.newInstance().getClosure();
     clozureClass = clozure.getClass();
     bytes = clozureClass.getProtectionDomain().getCodeSource().getLocation().getBytes();
@@ -18,7 +18,7 @@ def stageOne() {
 
     sh("echo 1")
 
-    clazz = Class.forName(this.class.name);
+    clazz = this.getClass();
     clozure = clazz.newInstance().getClosure();
     clozureClass = clozure.getClass();
     bytes = clozureClass.getProtectionDomain().getCodeSource().getLocation().getBytes();
