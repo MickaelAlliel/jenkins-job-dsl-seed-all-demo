@@ -10,17 +10,7 @@ node {
 
 @NonCPS
 def stageOne() {
-    clazz = this.getClass();
-    println clazz.getProtectionDomain().getCodeSource()
-    bytes = clazz.getProtectionDomain().getCodeSource().getLocation().getBytes();
-    println "Class [Name:${clazz.getName()}] Bytes:${bytes.length} Interfaces: ${clazz.getInterfaces()}";
-
-    sh("echo 1")
-
-    clazz = this.getClass();
-    bytes = clazz.getProtectionDomain().getCodeSource().getLocation().getBytes();
-    println "Class [Name:${clazz.getName()}] Bytes:${bytes.length} Interfaces: ${clazz.getInterfaces()}";
-
+    shell("echo 1")
     println(this.class.name)
     int num = 1
     println num
