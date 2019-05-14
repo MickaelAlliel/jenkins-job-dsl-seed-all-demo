@@ -1,0 +1,1117 @@
+Compiled from "WorkflowScript"
+public class WorkflowScript extends org.jenkinsci.plugins.workflow.cps.CpsScript implements java.io.Serializable {
+  private static final com.cloudbees.groovy.cps.impl.CpsFunction ___cps___12;
+
+  private static final com.cloudbees.groovy.cps.impl.CpsFunction ___cps___13;
+
+  private static long __timeStamp;
+
+  private static org.codehaus.groovy.reflection.ClassInfo $staticClassInfo;
+
+  public static transient boolean __$stMC;
+
+  private static java.lang.ref.SoftReference $callSiteArray;
+
+  public WorkflowScript();
+    Code:
+       0: aload_0
+       1: invokespecial #20                 // Method org/jenkinsci/plugins/workflow/cps/CpsScript."<init>":()V
+       4: invokestatic  #24                 // Method $getCallSiteArray:()[Lorg/codehaus/groovy/runtime/callsite/CallSite;
+       7: astore_1
+       8: return
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          4       4     0  this   LWorkflowScript;
+
+  public static void main(java.lang.String...);
+    Code:
+       0: invokestatic  #24                 // Method $getCallSiteArray:()[Lorg/codehaus/groovy/runtime/callsite/CallSite;
+       3: astore_1
+       4: aload_1
+       5: ldc           #29                 // int 0
+       7: aaload
+       8: ldc           #31                 // class com/cloudbees/groovy/cps/impl/CpsCallableInvocation
+      10: getstatic     #33                 // Field ___cps___12:Lcom/cloudbees/groovy/cps/impl/CpsFunction;
+      13: ldc           #2                  // class WorkflowScript
+      15: iconst_1
+      16: anewarray     #35                 // class java/lang/Object
+      19: dup
+      20: iconst_0
+      21: aload_0
+      22: aastore
+      23: invokeinterface #41,  5           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callConstructor:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      28: checkcast     #43                 // class java/lang/Throwable
+      31: athrow
+      32: return
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      32     0  args   [Ljava/lang/String;
+
+  public java.lang.Object run();
+    Code:
+       0: invokestatic  #24                 // Method $getCallSiteArray:()[Lorg/codehaus/groovy/runtime/callsite/CallSite;
+       3: astore_1
+       4: aload_1
+       5: ldc           #48                 // int 1
+       7: aaload
+       8: ldc           #31                 // class com/cloudbees/groovy/cps/impl/CpsCallableInvocation
+      10: getstatic     #50                 // Field ___cps___13:Lcom/cloudbees/groovy/cps/impl/CpsFunction;
+      13: aload_0
+      14: iconst_0
+      15: anewarray     #35                 // class java/lang/Object
+      18: invokeinterface #41,  5           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callConstructor:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      23: checkcast     #43                 // class java/lang/Throwable
+      26: athrow
+      27: aconst_null
+      28: areturn
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      27     0  this   LWorkflowScript;
+
+  public java.lang.Object stageOne();
+    Code:
+       0: invokestatic  #24                 // Method $getCallSiteArray:()[Lorg/codehaus/groovy/runtime/callsite/CallSite;
+       3: astore_1
+       4: aload_1
+       5: ldc           #53                 // int 2
+       7: aaload
+       8: ldc           #55                 // class org/kohsuke/groovy/sandbox/impl/Checker
+      10: aload_0
+      11: iconst_0
+      12: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      15: iconst_0
+      16: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      19: ldc           #63                 // String println
+      21: aload_1
+      22: ldc           #64                 // int 3
+      24: aaload
+      25: iconst_1
+      26: anewarray     #35                 // class java/lang/Object
+      29: dup
+      30: iconst_0
+      31: aload_1
+      32: ldc           #65                 // int 4
+      34: aaload
+      35: ldc           #55                 // class org/kohsuke/groovy/sandbox/impl/Checker
+      37: aload_1
+      38: ldc           #66                 // int 5
+      40: aaload
+      41: ldc           #55                 // class org/kohsuke/groovy/sandbox/impl/Checker
+      43: aload_0
+      44: iconst_0
+      45: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      48: iconst_0
+      49: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      52: ldc           #68                 // String class
+      54: invokeinterface #72,  6           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callStatic:(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      59: iconst_0
+      60: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      63: iconst_0
+      64: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      67: ldc           #74                 // String name
+      69: invokeinterface #72,  6           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callStatic:(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      74: aastore
+      75: invokestatic  #80                 // Method org/codehaus/groovy/runtime/ScriptBytecodeAdapter.createList:([Ljava/lang/Object;)Ljava/util/List;
+      78: invokeinterface #84,  2           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;)Ljava/lang/Object;
+      83: invokestatic  #90                 // Method org/codehaus/groovy/runtime/ArrayUtil.createArray:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)[Ljava/lang/Object;
+      86: invokeinterface #93,  3           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callStatic:(Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+      91: pop
+      92: aload_1
+      93: ldc           #94                 // int 6
+      95: aaload
+      96: ldc           #55                 // class org/kohsuke/groovy/sandbox/impl/Checker
+      98: aload_0
+      99: iconst_0
+     100: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     103: iconst_0
+     104: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     107: ldc           #96                 // String sh
+     109: aload_1
+     110: ldc           #97                 // int 7
+     112: aaload
+     113: iconst_1
+     114: anewarray     #35                 // class java/lang/Object
+     117: dup
+     118: iconst_0
+     119: ldc           #99                 // String echo 1
+     121: aastore
+     122: invokestatic  #80                 // Method org/codehaus/groovy/runtime/ScriptBytecodeAdapter.createList:([Ljava/lang/Object;)Ljava/util/List;
+     125: invokeinterface #84,  2           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;)Ljava/lang/Object;
+     130: invokestatic  #90                 // Method org/codehaus/groovy/runtime/ArrayUtil.createArray:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)[Ljava/lang/Object;
+     133: invokeinterface #93,  3           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callStatic:(Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+     138: pop
+     139: aload_1
+     140: ldc           #100                // int 8
+     142: aaload
+     143: ldc           #55                 // class org/kohsuke/groovy/sandbox/impl/Checker
+     145: ldc           #102                // class java/lang/Integer
+     147: iconst_1
+     148: invokestatic  #105                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     151: iconst_0
+     152: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     155: iconst_1
+     156: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     159: iconst_0
+     160: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     163: invokestatic  #90                 // Method org/codehaus/groovy/runtime/ArrayUtil.createArray:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)[Ljava/lang/Object;
+     166: invokeinterface #93,  3           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callStatic:(Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+     171: invokestatic  #111                // Method org/codehaus/groovy/runtime/typehandling/DefaultTypeTransformation.intUnbox:(Ljava/lang/Object;)I
+     174: istore_2
+     175: iload_2
+     176: pop
+     177: aload_1
+     178: ldc           #112                // int 9
+     180: aaload
+     181: ldc           #55                 // class org/kohsuke/groovy/sandbox/impl/Checker
+     183: aload_0
+     184: iconst_0
+     185: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     188: iconst_0
+     189: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     192: ldc           #63                 // String println
+     194: aload_1
+     195: ldc           #113                // int 10
+     197: aaload
+     198: iconst_1
+     199: anewarray     #35                 // class java/lang/Object
+     202: dup
+     203: iconst_0
+     204: iload_2
+     205: invokestatic  #105                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     208: aastore
+     209: invokestatic  #80                 // Method org/codehaus/groovy/runtime/ScriptBytecodeAdapter.createList:([Ljava/lang/Object;)Ljava/util/List;
+     212: invokeinterface #84,  2           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;)Ljava/lang/Object;
+     217: invokestatic  #90                 // Method org/codehaus/groovy/runtime/ArrayUtil.createArray:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)[Ljava/lang/Object;
+     220: invokeinterface #93,  3           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callStatic:(Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+     225: areturn
+     226: aconst_null
+     227: areturn
+    LineNumberTable:
+      line 13: 4
+      line 14: 92
+      line 15: 139
+      line 16: 177
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0     226     0  this   LWorkflowScript;
+        175      51     2   num   I
+
+  public java.lang.Object stageTwo();
+    Code:
+       0: invokestatic  #24                 // Method $getCallSiteArray:()[Lorg/codehaus/groovy/runtime/callsite/CallSite;
+       3: astore_1
+       4: aload_1
+       5: ldc           #117                // int 11
+       7: aaload
+       8: ldc           #55                 // class org/kohsuke/groovy/sandbox/impl/Checker
+      10: aload_0
+      11: iconst_0
+      12: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      15: iconst_0
+      16: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      19: ldc           #63                 // String println
+      21: aload_1
+      22: ldc           #118                // int 12
+      24: aaload
+      25: iconst_1
+      26: anewarray     #35                 // class java/lang/Object
+      29: dup
+      30: iconst_0
+      31: aload_1
+      32: ldc           #119                // int 13
+      34: aaload
+      35: ldc           #55                 // class org/kohsuke/groovy/sandbox/impl/Checker
+      37: aload_1
+      38: ldc           #120                // int 14
+      40: aaload
+      41: ldc           #55                 // class org/kohsuke/groovy/sandbox/impl/Checker
+      43: aload_0
+      44: iconst_0
+      45: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      48: iconst_0
+      49: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      52: ldc           #68                 // String class
+      54: invokeinterface #72,  6           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callStatic:(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      59: iconst_0
+      60: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      63: iconst_0
+      64: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      67: ldc           #74                 // String name
+      69: invokeinterface #72,  6           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callStatic:(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      74: aastore
+      75: invokestatic  #80                 // Method org/codehaus/groovy/runtime/ScriptBytecodeAdapter.createList:([Ljava/lang/Object;)Ljava/util/List;
+      78: invokeinterface #84,  2           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;)Ljava/lang/Object;
+      83: invokestatic  #90                 // Method org/codehaus/groovy/runtime/ArrayUtil.createArray:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)[Ljava/lang/Object;
+      86: invokeinterface #93,  3           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callStatic:(Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+      91: pop
+      92: iconst_2
+      93: invokestatic  #105                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      96: astore_2
+      97: aload_2
+      98: pop
+      99: aload_1
+     100: ldc           #121                // int 15
+     102: aaload
+     103: ldc           #55                 // class org/kohsuke/groovy/sandbox/impl/Checker
+     105: aload_0
+     106: iconst_0
+     107: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     110: iconst_0
+     111: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     114: ldc           #123                // String print
+     116: aload_1
+     117: ldc           #124                // int 16
+     119: aaload
+     120: iconst_1
+     121: anewarray     #35                 // class java/lang/Object
+     124: dup
+     125: iconst_0
+     126: aload_2
+     127: aastore
+     128: invokestatic  #80                 // Method org/codehaus/groovy/runtime/ScriptBytecodeAdapter.createList:([Ljava/lang/Object;)Ljava/util/List;
+     131: invokeinterface #84,  2           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;)Ljava/lang/Object;
+     136: invokestatic  #90                 // Method org/codehaus/groovy/runtime/ArrayUtil.createArray:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)[Ljava/lang/Object;
+     139: invokeinterface #93,  3           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callStatic:(Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+     144: pop
+     145: aload_1
+     146: ldc           #125                // int 17
+     148: aaload
+     149: ldc           #55                 // class org/kohsuke/groovy/sandbox/impl/Checker
+     151: aload_0
+     152: iconst_0
+     153: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     156: iconst_0
+     157: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     160: ldc           #96                 // String sh
+     162: aload_1
+     163: ldc           #126                // int 18
+     165: aaload
+     166: iconst_1
+     167: anewarray     #35                 // class java/lang/Object
+     170: dup
+     171: iconst_0
+     172: ldc           #128                // String echo 2
+     174: aastore
+     175: invokestatic  #80                 // Method org/codehaus/groovy/runtime/ScriptBytecodeAdapter.createList:([Ljava/lang/Object;)Ljava/util/List;
+     178: invokeinterface #84,  2           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;)Ljava/lang/Object;
+     183: invokestatic  #90                 // Method org/codehaus/groovy/runtime/ArrayUtil.createArray:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)[Ljava/lang/Object;
+     186: invokeinterface #93,  3           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callStatic:(Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+     191: areturn
+     192: aconst_null
+     193: areturn
+    LineNumberTable:
+      line 21: 4
+      line 22: 92
+      line 23: 99
+      line 24: 145
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0     192     0  this   LWorkflowScript;
+         97      95     2   num   Ljava/lang/Object;
+
+  private static final com.cloudbees.groovy.cps.impl.CpsFunction ___cps___12();
+    Code:
+       0: invokestatic  #24                 // Method $getCallSiteArray:()[Lorg/codehaus/groovy/runtime/callsite/CallSite;
+       3: astore_0
+       4: aload_0
+       5: ldc           #131                // int 19
+       7: aaload
+       8: aload_0
+       9: ldc           #132                // int 20
+      11: aaload
+      12: aload_0
+      13: ldc           #133                // int 21
+      15: aaload
+      16: ldc           #135                // class com/cloudbees/groovy/cps/Builder
+      18: aload_0
+      19: ldc           #136                // int 22
+      21: aaload
+      22: ldc           #138                // class com/cloudbees/groovy/cps/MethodLocation
+      24: ldc           #139                // String WorkflowScript
+      26: ldc           #140                // String main
+      28: ldc           #139                // String WorkflowScript
+      30: invokeinterface #41,  5           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callConstructor:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      35: invokeinterface #143,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callConstructor:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      40: ldc           #145                // class org/jenkinsci/plugins/workflow/cps/CpsClosure2
+      42: invokeinterface #147,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      47: aload_0
+      48: ldc           #148                // int 23
+      50: aaload
+      51: ldc           #150                // class com/cloudbees/groovy/cps/sandbox/Untrusted
+      53: invokeinterface #153,  2          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callGetProperty:(Ljava/lang/Object;)Ljava/lang/Object;
+      58: invokeinterface #147,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      63: ldc           #135                // class com/cloudbees/groovy/cps/Builder
+      65: invokestatic  #157                // Method org/codehaus/groovy/runtime/ScriptBytecodeAdapter.castToType:(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;
+      68: checkcast     #135                // class com/cloudbees/groovy/cps/Builder
+      71: astore_1
+      72: aload_1
+      73: pop
+      74: aload_0
+      75: ldc           #158                // int 24
+      77: aaload
+      78: ldc           #160                // class com/cloudbees/groovy/cps/impl/CpsFunction
+      80: iconst_1
+      81: anewarray     #35                 // class java/lang/Object
+      84: dup
+      85: iconst_0
+      86: ldc           #161                // String args
+      88: aastore
+      89: invokestatic  #80                 // Method org/codehaus/groovy/runtime/ScriptBytecodeAdapter.createList:([Ljava/lang/Object;)Ljava/util/List;
+      92: aload_0
+      93: ldc           #162                // int 25
+      95: aaload
+      96: aload_1
+      97: aload_0
+      98: ldc           #163                // int 26
+     100: aaload
+     101: aload_1
+     102: bipush        -1
+     104: invokestatic  #105                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     107: ldc           #165                // class org/jenkinsci/plugins/workflow/cps/Safepoint
+     109: ldc           #167                // String safepoint
+     111: invokeinterface #169,  5          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     116: aload_0
+     117: ldc           #170                // int 27
+     119: aaload
+     120: aload_1
+     121: bipush        -1
+     123: invokestatic  #105                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     126: aload_0
+     127: ldc           #171                // int 28
+     129: aaload
+     130: aload_1
+     131: ldc           #173                // class org/codehaus/groovy/runtime/InvokerHelper
+     133: invokeinterface #147,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     138: aload_0
+     139: ldc           #174                // int 29
+     141: aaload
+     142: aload_1
+     143: ldc           #176                // String runScript
+     145: invokeinterface #147,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     150: iconst_0
+     151: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     154: aload_0
+     155: ldc           #177                // int 30
+     157: aaload
+     158: aload_1
+     159: ldc           #2                  // class WorkflowScript
+     161: invokeinterface #147,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     166: aload_0
+     167: ldc           #178                // int 31
+     169: aaload
+     170: aload_1
+     171: bipush        -1
+     173: invokestatic  #105                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     176: ldc           #161                // String args
+     178: invokeinterface #181,  4          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     183: invokestatic  #184                // Method org/codehaus/groovy/runtime/ArrayUtil.createArray:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)[Ljava/lang/Object;
+     186: invokeinterface #187,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+     191: invokeinterface #181,  4          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     196: invokeinterface #189,  4          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callConstructor:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     201: ldc           #160                // class com/cloudbees/groovy/cps/impl/CpsFunction
+     203: invokestatic  #157                // Method org/codehaus/groovy/runtime/ScriptBytecodeAdapter.castToType:(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;
+     206: checkcast     #160                // class com/cloudbees/groovy/cps/impl/CpsFunction
+     209: areturn
+     210: aconst_null
+     211: areturn
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         72     138     1     b   Lcom/cloudbees/groovy/cps/Builder;
+
+  private static final com.cloudbees.groovy.cps.impl.CpsFunction ___cps___13();
+    Code:
+       0: invokestatic  #24                 // Method $getCallSiteArray:()[Lorg/codehaus/groovy/runtime/callsite/CallSite;
+       3: astore_0
+       4: aload_0
+       5: ldc           #192                // int 32
+       7: aaload
+       8: aload_0
+       9: ldc           #193                // int 33
+      11: aaload
+      12: aload_0
+      13: ldc           #194                // int 34
+      15: aaload
+      16: ldc           #135                // class com/cloudbees/groovy/cps/Builder
+      18: aload_0
+      19: ldc           #195                // int 35
+      21: aaload
+      22: ldc           #138                // class com/cloudbees/groovy/cps/MethodLocation
+      24: ldc           #139                // String WorkflowScript
+      26: ldc           #196                // String run
+      28: ldc           #139                // String WorkflowScript
+      30: invokeinterface #41,  5           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callConstructor:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      35: invokeinterface #143,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callConstructor:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      40: ldc           #145                // class org/jenkinsci/plugins/workflow/cps/CpsClosure2
+      42: invokeinterface #147,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      47: aload_0
+      48: ldc           #197                // int 36
+      50: aaload
+      51: ldc           #150                // class com/cloudbees/groovy/cps/sandbox/Untrusted
+      53: invokeinterface #153,  2          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callGetProperty:(Ljava/lang/Object;)Ljava/lang/Object;
+      58: invokeinterface #147,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      63: ldc           #135                // class com/cloudbees/groovy/cps/Builder
+      65: invokestatic  #157                // Method org/codehaus/groovy/runtime/ScriptBytecodeAdapter.castToType:(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;
+      68: checkcast     #135                // class com/cloudbees/groovy/cps/Builder
+      71: astore_1
+      72: aload_1
+      73: pop
+      74: aload_0
+      75: ldc           #198                // int 37
+      77: aaload
+      78: ldc           #160                // class com/cloudbees/groovy/cps/impl/CpsFunction
+      80: iconst_0
+      81: anewarray     #35                 // class java/lang/Object
+      84: invokestatic  #80                 // Method org/codehaus/groovy/runtime/ScriptBytecodeAdapter.createList:([Ljava/lang/Object;)Ljava/util/List;
+      87: aload_0
+      88: ldc           #199                // int 38
+      90: aaload
+      91: aload_1
+      92: aload_0
+      93: ldc           #200                // int 39
+      95: aaload
+      96: aload_1
+      97: bipush        -1
+      99: invokestatic  #105                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     102: ldc           #165                // class org/jenkinsci/plugins/workflow/cps/Safepoint
+     104: ldc           #167                // String safepoint
+     106: invokeinterface #169,  5          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     111: aload_0
+     112: ldc           #201                // int 40
+     114: aaload
+     115: aload_1
+     116: aload_0
+     117: ldc           #202                // int 41
+     119: aaload
+     120: aload_1
+     121: iconst_1
+     122: invokestatic  #105                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     125: aload_0
+     126: ldc           #203                // int 42
+     128: aaload
+     129: aload_1
+     130: invokeinterface #84,  2           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;)Ljava/lang/Object;
+     135: aload_0
+     136: ldc           #204                // int 43
+     138: aaload
+     139: aload_1
+     140: ldc           #206                // String node
+     142: invokeinterface #147,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     147: iconst_0
+     148: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     151: aload_0
+     152: ldc           #207                // int 44
+     154: aaload
+     155: aload_1
+     156: iconst_1
+     157: invokestatic  #105                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     160: iconst_1
+     161: anewarray     #35                 // class java/lang/Object
+     164: dup
+     165: iconst_0
+     166: ldc           #35                 // class java/lang/Object
+     168: aastore
+     169: invokestatic  #80                 // Method org/codehaus/groovy/runtime/ScriptBytecodeAdapter.createList:([Ljava/lang/Object;)Ljava/util/List;
+     172: iconst_1
+     173: anewarray     #35                 // class java/lang/Object
+     176: dup
+     177: iconst_0
+     178: ldc           #209                // String it
+     180: aastore
+     181: invokestatic  #80                 // Method org/codehaus/groovy/runtime/ScriptBytecodeAdapter.createList:([Ljava/lang/Object;)Ljava/util/List;
+     184: aload_0
+     185: ldc           #210                // int 45
+     187: aaload
+     188: aload_1
+     189: aload_0
+     190: ldc           #211                // int 46
+     192: aaload
+     193: aload_1
+     194: iconst_2
+     195: invokestatic  #105                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     198: ldc           #165                // class org/jenkinsci/plugins/workflow/cps/Safepoint
+     200: ldc           #167                // String safepoint
+     202: invokeinterface #169,  5          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     207: aload_0
+     208: ldc           #212                // int 47
+     210: aaload
+     211: aload_1
+     212: aload_0
+     213: ldc           #213                // int 48
+     215: aaload
+     216: aload_1
+     217: iconst_2
+     218: invokestatic  #105                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     221: aload_0
+     222: ldc           #214                // int 49
+     224: aaload
+     225: aload_1
+     226: invokeinterface #84,  2           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;)Ljava/lang/Object;
+     231: aload_0
+     232: ldc           #215                // int 50
+     234: aaload
+     235: aload_1
+     236: ldc           #217                // String stage
+     238: invokeinterface #147,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     243: iconst_0
+     244: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     247: aload_0
+     248: ldc           #218                // int 51
+     250: aaload
+     251: aload_1
+     252: ldc           #220                // String Stage One
+     254: invokeinterface #147,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     259: aload_0
+     260: ldc           #221                // int 52
+     262: aaload
+     263: aload_1
+     264: iconst_2
+     265: invokestatic  #105                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     268: iconst_1
+     269: anewarray     #35                 // class java/lang/Object
+     272: dup
+     273: iconst_0
+     274: ldc           #35                 // class java/lang/Object
+     276: aastore
+     277: invokestatic  #80                 // Method org/codehaus/groovy/runtime/ScriptBytecodeAdapter.createList:([Ljava/lang/Object;)Ljava/util/List;
+     280: iconst_1
+     281: anewarray     #35                 // class java/lang/Object
+     284: dup
+     285: iconst_0
+     286: ldc           #209                // String it
+     288: aastore
+     289: invokestatic  #80                 // Method org/codehaus/groovy/runtime/ScriptBytecodeAdapter.createList:([Ljava/lang/Object;)Ljava/util/List;
+     292: aload_0
+     293: ldc           #222                // int 53
+     295: aaload
+     296: aload_1
+     297: aload_0
+     298: ldc           #223                // int 54
+     300: aaload
+     301: aload_1
+     302: iconst_3
+     303: invokestatic  #105                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     306: ldc           #165                // class org/jenkinsci/plugins/workflow/cps/Safepoint
+     308: ldc           #167                // String safepoint
+     310: invokeinterface #169,  5          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     315: aload_0
+     316: ldc           #224                // int 55
+     318: aaload
+     319: aload_1
+     320: aload_0
+     321: ldc           #225                // int 56
+     323: aaload
+     324: aload_1
+     325: iconst_3
+     326: invokestatic  #105                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     329: aload_0
+     330: ldc           #226                // int 57
+     332: aaload
+     333: aload_1
+     334: invokeinterface #84,  2           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;)Ljava/lang/Object;
+     339: aload_0
+     340: ldc           #227                // int 58
+     342: aaload
+     343: aload_1
+     344: ldc           #228                // String stageOne
+     346: invokeinterface #147,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     351: iconst_0
+     352: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     355: invokeinterface #231,  6          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     360: invokeinterface #147,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     365: invokeinterface #181,  4          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     370: invokeinterface #231,  6          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     375: invokestatic  #184                // Method org/codehaus/groovy/runtime/ArrayUtil.createArray:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)[Ljava/lang/Object;
+     378: invokeinterface #187,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+     383: aload_0
+     384: ldc           #232                // int 59
+     386: aaload
+     387: aload_1
+     388: bipush        6
+     390: invokestatic  #105                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     393: aload_0
+     394: ldc           #233                // int 60
+     396: aaload
+     397: aload_1
+     398: invokeinterface #84,  2           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;)Ljava/lang/Object;
+     403: aload_0
+     404: ldc           #234                // int 61
+     406: aaload
+     407: aload_1
+     408: ldc           #217                // String stage
+     410: invokeinterface #147,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     415: iconst_0
+     416: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     419: aload_0
+     420: ldc           #235                // int 62
+     422: aaload
+     423: aload_1
+     424: ldc           #237                // String Stage Two
+     426: invokeinterface #147,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     431: aload_0
+     432: ldc           #238                // int 63
+     434: aaload
+     435: aload_1
+     436: bipush        6
+     438: invokestatic  #105                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     441: iconst_1
+     442: anewarray     #35                 // class java/lang/Object
+     445: dup
+     446: iconst_0
+     447: ldc           #35                 // class java/lang/Object
+     449: aastore
+     450: invokestatic  #80                 // Method org/codehaus/groovy/runtime/ScriptBytecodeAdapter.createList:([Ljava/lang/Object;)Ljava/util/List;
+     453: iconst_1
+     454: anewarray     #35                 // class java/lang/Object
+     457: dup
+     458: iconst_0
+     459: ldc           #209                // String it
+     461: aastore
+     462: invokestatic  #80                 // Method org/codehaus/groovy/runtime/ScriptBytecodeAdapter.createList:([Ljava/lang/Object;)Ljava/util/List;
+     465: aload_0
+     466: ldc           #239                // int 64
+     468: aaload
+     469: aload_1
+     470: aload_0
+     471: ldc           #240                // int 65
+     473: aaload
+     474: aload_1
+     475: bipush        7
+     477: invokestatic  #105                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     480: ldc           #165                // class org/jenkinsci/plugins/workflow/cps/Safepoint
+     482: ldc           #167                // String safepoint
+     484: invokeinterface #169,  5          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     489: aload_0
+     490: ldc           #241                // int 66
+     492: aaload
+     493: aload_1
+     494: aload_0
+     495: ldc           #242                // int 67
+     497: aaload
+     498: aload_1
+     499: bipush        7
+     501: invokestatic  #105                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     504: aload_0
+     505: ldc           #243                // int 68
+     507: aaload
+     508: aload_1
+     509: invokeinterface #84,  2           // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;)Ljava/lang/Object;
+     514: aload_0
+     515: ldc           #244                // int 69
+     517: aaload
+     518: aload_1
+     519: ldc           #245                // String stageTwo
+     521: invokeinterface #147,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     526: iconst_0
+     527: invokestatic  #61                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     530: invokeinterface #231,  6          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     535: invokeinterface #147,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     540: invokeinterface #181,  4          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     545: invokeinterface #231,  6          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     550: invokestatic  #184                // Method org/codehaus/groovy/runtime/ArrayUtil.createArray:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)[Ljava/lang/Object;
+     553: invokeinterface #187,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+     558: invokeinterface #181,  4          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     563: invokeinterface #181,  4          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     568: invokeinterface #231,  6          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     573: invokestatic  #90                 // Method org/codehaus/groovy/runtime/ArrayUtil.createArray:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)[Ljava/lang/Object;
+     576: invokeinterface #187,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+     581: invokeinterface #147,  3          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     586: invokeinterface #181,  4          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.call:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     591: invokeinterface #189,  4          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callConstructor:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     596: ldc           #160                // class com/cloudbees/groovy/cps/impl/CpsFunction
+     598: invokestatic  #157                // Method org/codehaus/groovy/runtime/ScriptBytecodeAdapter.castToType:(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;
+     601: checkcast     #160                // class com/cloudbees/groovy/cps/impl/CpsFunction
+     604: areturn
+     605: aconst_null
+     606: areturn
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         72     533     1     b   Lcom/cloudbees/groovy/cps/Builder;
+
+  protected groovy.lang.MetaClass $getStaticMetaClass();
+    Code:
+       0: aload_0
+       1: invokevirtual #251                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+       4: ldc           #2                  // class WorkflowScript
+       6: if_acmpeq     14
+       9: aload_0
+      10: invokestatic  #255                // Method org/codehaus/groovy/runtime/ScriptBytecodeAdapter.initMetaClass:(Ljava/lang/Object;)Lgroovy/lang/MetaClass;
+      13: areturn
+      14: getstatic     #257                // Field $staticClassInfo:Lorg/codehaus/groovy/reflection/ClassInfo;
+      17: astore_1
+      18: aload_1
+      19: ifnonnull     34
+      22: aload_0
+      23: invokevirtual #251                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+      26: invokestatic  #263                // Method org/codehaus/groovy/reflection/ClassInfo.getClassInfo:(Ljava/lang/Class;)Lorg/codehaus/groovy/reflection/ClassInfo;
+      29: dup
+      30: astore_1
+      31: putstatic     #257                // Field $staticClassInfo:Lorg/codehaus/groovy/reflection/ClassInfo;
+      34: aload_1
+      35: invokevirtual #266                // Method org/codehaus/groovy/reflection/ClassInfo.getMetaClass:()Lgroovy/lang/MetaClass;
+      38: areturn
+
+  static {};
+    Code:
+       0: lconst_0
+       1: invokestatic  #272                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+       4: astore_0
+       5: aload_0
+       6: invokevirtual #276                // Method java/lang/Long.longValue:()J
+       9: putstatic     #278                // Field __timeStamp:J
+      12: aload_0
+      13: pop
+      14: invokestatic  #24                 // Method $getCallSiteArray:()[Lorg/codehaus/groovy/runtime/callsite/CallSite;
+      17: ldc_w         #279                // int 70
+      20: aaload
+      21: ldc           #2                  // class WorkflowScript
+      23: invokeinterface #282,  2          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callStatic:(Ljava/lang/Class;)Ljava/lang/Object;
+      28: astore_1
+      29: aload_1
+      30: ldc           #160                // class com/cloudbees/groovy/cps/impl/CpsFunction
+      32: invokestatic  #157                // Method org/codehaus/groovy/runtime/ScriptBytecodeAdapter.castToType:(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;
+      35: checkcast     #160                // class com/cloudbees/groovy/cps/impl/CpsFunction
+      38: putstatic     #33                 // Field ___cps___12:Lcom/cloudbees/groovy/cps/impl/CpsFunction;
+      41: aload_1
+      42: pop
+      43: invokestatic  #24                 // Method $getCallSiteArray:()[Lorg/codehaus/groovy/runtime/callsite/CallSite;
+      46: ldc_w         #283                // int 71
+      49: aaload
+      50: ldc           #2                  // class WorkflowScript
+      52: invokeinterface #282,  2          // InterfaceMethod org/codehaus/groovy/runtime/callsite/CallSite.callStatic:(Ljava/lang/Class;)Ljava/lang/Object;
+      57: astore_2
+      58: aload_2
+      59: ldc           #160                // class com/cloudbees/groovy/cps/impl/CpsFunction
+      61: invokestatic  #157                // Method org/codehaus/groovy/runtime/ScriptBytecodeAdapter.castToType:(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;
+      64: checkcast     #160                // class com/cloudbees/groovy/cps/impl/CpsFunction
+      67: putstatic     #50                 // Field ___cps___13:Lcom/cloudbees/groovy/cps/impl/CpsFunction;
+      70: aload_2
+      71: pop
+      72: return
+
+  private static void $createCallSiteArray_1(java.lang.String[]);
+    Code:
+       0: aload_0
+       1: ldc           #29                 // int 0
+       3: ldc_w         #288                // String <$constructor$>
+       6: aastore
+       7: aload_0
+       8: ldc           #48                 // int 1
+      10: ldc_w         #288                // String <$constructor$>
+      13: aastore
+      14: aload_0
+      15: ldc           #53                 // int 2
+      17: ldc_w         #290                // String checkedCall
+      20: aastore
+      21: aload_0
+      22: ldc           #64                 // int 3
+      24: ldc_w         #292                // String toArray
+      27: aastore
+      28: aload_0
+      29: ldc           #65                 // int 4
+      31: ldc_w         #294                // String checkedGetProperty
+      34: aastore
+      35: aload_0
+      36: ldc           #66                 // int 5
+      38: ldc_w         #294                // String checkedGetProperty
+      41: aastore
+      42: aload_0
+      43: ldc           #94                 // int 6
+      45: ldc_w         #290                // String checkedCall
+      48: aastore
+      49: aload_0
+      50: ldc           #97                 // int 7
+      52: ldc_w         #292                // String toArray
+      55: aastore
+      56: aload_0
+      57: ldc           #100                // int 8
+      59: ldc_w         #296                // String checkedCast
+      62: aastore
+      63: aload_0
+      64: ldc           #112                // int 9
+      66: ldc_w         #290                // String checkedCall
+      69: aastore
+      70: aload_0
+      71: ldc           #113                // int 10
+      73: ldc_w         #292                // String toArray
+      76: aastore
+      77: aload_0
+      78: ldc           #117                // int 11
+      80: ldc_w         #290                // String checkedCall
+      83: aastore
+      84: aload_0
+      85: ldc           #118                // int 12
+      87: ldc_w         #292                // String toArray
+      90: aastore
+      91: aload_0
+      92: ldc           #119                // int 13
+      94: ldc_w         #294                // String checkedGetProperty
+      97: aastore
+      98: aload_0
+      99: ldc           #120                // int 14
+     101: ldc_w         #294                // String checkedGetProperty
+     104: aastore
+     105: aload_0
+     106: ldc           #121                // int 15
+     108: ldc_w         #290                // String checkedCall
+     111: aastore
+     112: aload_0
+     113: ldc           #124                // int 16
+     115: ldc_w         #292                // String toArray
+     118: aastore
+     119: aload_0
+     120: ldc           #125                // int 17
+     122: ldc_w         #290                // String checkedCall
+     125: aastore
+     126: aload_0
+     127: ldc           #126                // int 18
+     129: ldc_w         #292                // String toArray
+     132: aastore
+     133: aload_0
+     134: ldc           #131                // int 19
+     136: ldc_w         #298                // String contextualize
+     139: aastore
+     140: aload_0
+     141: ldc           #132                // int 20
+     143: ldc_w         #300                // String withClosureType
+     146: aastore
+     147: aload_0
+     148: ldc           #133                // int 21
+     150: ldc_w         #288                // String <$constructor$>
+     153: aastore
+     154: aload_0
+     155: ldc           #136                // int 22
+     157: ldc_w         #288                // String <$constructor$>
+     160: aastore
+     161: aload_0
+     162: ldc           #148                // int 23
+     164: ldc_w         #302                // String INSTANCE
+     167: aastore
+     168: aload_0
+     169: ldc           #158                // int 24
+     171: ldc_w         #288                // String <$constructor$>
+     174: aastore
+     175: aload_0
+     176: ldc           #162                // int 25
+     178: ldc_w         #304                // String block
+     181: aastore
+     182: aload_0
+     183: ldc           #163                // int 26
+     185: ldc_w         #306                // String staticCall
+     188: aastore
+     189: aload_0
+     190: ldc           #170                // int 27
+     192: ldc_w         #308                // String functionCall
+     195: aastore
+     196: aload_0
+     197: ldc           #171                // int 28
+     199: ldc_w         #310                // String constant
+     202: aastore
+     203: aload_0
+     204: ldc           #174                // int 29
+     206: ldc_w         #310                // String constant
+     209: aastore
+     210: aload_0
+     211: ldc           #177                // int 30
+     213: ldc_w         #310                // String constant
+     216: aastore
+     217: aload_0
+     218: ldc           #178                // int 31
+     220: ldc_w         #312                // String localVariable
+     223: aastore
+     224: aload_0
+     225: ldc           #192                // int 32
+     227: ldc_w         #298                // String contextualize
+     230: aastore
+     231: aload_0
+     232: ldc           #193                // int 33
+     234: ldc_w         #300                // String withClosureType
+     237: aastore
+     238: aload_0
+     239: ldc           #194                // int 34
+     241: ldc_w         #288                // String <$constructor$>
+     244: aastore
+     245: aload_0
+     246: ldc           #195                // int 35
+     248: ldc_w         #288                // String <$constructor$>
+     251: aastore
+     252: aload_0
+     253: ldc           #197                // int 36
+     255: ldc_w         #302                // String INSTANCE
+     258: aastore
+     259: aload_0
+     260: ldc           #198                // int 37
+     262: ldc_w         #288                // String <$constructor$>
+     265: aastore
+     266: aload_0
+     267: ldc           #199                // int 38
+     269: ldc_w         #304                // String block
+     272: aastore
+     273: aload_0
+     274: ldc           #200                // int 39
+     276: ldc_w         #306                // String staticCall
+     279: aastore
+     280: aload_0
+     281: ldc           #201                // int 40
+     283: ldc_w         #304                // String block
+     286: aastore
+     287: aload_0
+     288: ldc           #202                // int 41
+     290: ldc_w         #308                // String functionCall
+     293: aastore
+     294: aload_0
+     295: ldc           #203                // int 42
+     297: ldc_w         #314                // String javaThis_
+     300: aastore
+     301: aload_0
+     302: ldc           #204                // int 43
+     304: ldc_w         #310                // String constant
+     307: aastore
+     308: aload_0
+     309: ldc           #207                // int 44
+     311: ldc_w         #316                // String closure
+     314: aastore
+     315: aload_0
+     316: ldc           #210                // int 45
+     318: ldc_w         #304                // String block
+     321: aastore
+     322: aload_0
+     323: ldc           #211                // int 46
+     325: ldc_w         #306                // String staticCall
+     328: aastore
+     329: aload_0
+     330: ldc           #212                // int 47
+     332: ldc_w         #304                // String block
+     335: aastore
+     336: aload_0
+     337: ldc           #213                // int 48
+     339: ldc_w         #308                // String functionCall
+     342: aastore
+     343: aload_0
+     344: ldc           #214                // int 49
+     346: ldc_w         #314                // String javaThis_
+     349: aastore
+     350: aload_0
+     351: ldc           #215                // int 50
+     353: ldc_w         #310                // String constant
+     356: aastore
+     357: aload_0
+     358: ldc           #218                // int 51
+     360: ldc_w         #310                // String constant
+     363: aastore
+     364: aload_0
+     365: ldc           #221                // int 52
+     367: ldc_w         #316                // String closure
+     370: aastore
+     371: aload_0
+     372: ldc           #222                // int 53
+     374: ldc_w         #304                // String block
+     377: aastore
+     378: aload_0
+     379: ldc           #223                // int 54
+     381: ldc_w         #306                // String staticCall
+     384: aastore
+     385: aload_0
+     386: ldc           #224                // int 55
+     388: ldc_w         #304                // String block
+     391: aastore
+     392: aload_0
+     393: ldc           #225                // int 56
+     395: ldc_w         #308                // String functionCall
+     398: aastore
+     399: aload_0
+     400: ldc           #226                // int 57
+     402: ldc_w         #314                // String javaThis_
+     405: aastore
+     406: aload_0
+     407: ldc           #227                // int 58
+     409: ldc_w         #310                // String constant
+     412: aastore
+     413: aload_0
+     414: ldc           #232                // int 59
+     416: ldc_w         #308                // String functionCall
+     419: aastore
+     420: aload_0
+     421: ldc           #233                // int 60
+     423: ldc_w         #314                // String javaThis_
+     426: aastore
+     427: aload_0
+     428: ldc           #234                // int 61
+     430: ldc_w         #310                // String constant
+     433: aastore
+     434: aload_0
+     435: ldc           #235                // int 62
+     437: ldc_w         #310                // String constant
+     440: aastore
+     441: aload_0
+     442: ldc           #238                // int 63
+     444: ldc_w         #316                // String closure
+     447: aastore
+     448: aload_0
+     449: ldc           #239                // int 64
+     451: ldc_w         #304                // String block
+     454: aastore
+     455: aload_0
+     456: ldc           #240                // int 65
+     458: ldc_w         #306                // String staticCall
+     461: aastore
+     462: aload_0
+     463: ldc           #241                // int 66
+     465: ldc_w         #304                // String block
+     468: aastore
+     469: aload_0
+     470: ldc           #242                // int 67
+     472: ldc_w         #308                // String functionCall
+     475: aastore
+     476: aload_0
+     477: ldc           #243                // int 68
+     479: ldc_w         #314                // String javaThis_
+     482: aastore
+     483: aload_0
+     484: ldc           #244                // int 69
+     486: ldc_w         #310                // String constant
+     489: aastore
+     490: aload_0
+     491: ldc_w         #279                // int 70
+     494: ldc_w         #317                // String ___cps___12
+     497: aastore
+     498: aload_0
+     499: ldc_w         #283                // int 71
+     502: ldc_w         #318                // String ___cps___13
+     505: aastore
+     506: return
+
+  private static org.codehaus.groovy.runtime.callsite.CallSiteArray $createCallSiteArray();
+    Code:
+       0: ldc_w         #321                // int 72
+       3: anewarray     #323                // class java/lang/String
+       6: astore_0
+       7: aload_0
+       8: invokestatic  #325                // Method $createCallSiteArray_1:([Ljava/lang/String;)V
+      11: new           #327                // class org/codehaus/groovy/runtime/callsite/CallSiteArray
+      14: dup
+      15: ldc           #2                  // class WorkflowScript
+      17: aload_0
+      18: invokespecial #330                // Method org/codehaus/groovy/runtime/callsite/CallSiteArray."<init>":(Ljava/lang/Class;[Ljava/lang/String;)V
+      21: areturn
+
+  private static org.codehaus.groovy.runtime.callsite.CallSite[] $getCallSiteArray();
+    Code:
+       0: getstatic     #332                // Field $callSiteArray:Ljava/lang/ref/SoftReference;
+       3: ifnull        20
+       6: getstatic     #332                // Field $callSiteArray:Ljava/lang/ref/SoftReference;
+       9: invokevirtual #337                // Method java/lang/ref/SoftReference.get:()Ljava/lang/Object;
+      12: checkcast     #327                // class org/codehaus/groovy/runtime/callsite/CallSiteArray
+      15: dup
+      16: astore_0
+      17: ifnonnull     35
+      20: invokestatic  #339                // Method $createCallSiteArray:()Lorg/codehaus/groovy/runtime/callsite/CallSiteArray;
+      23: astore_0
+      24: new           #334                // class java/lang/ref/SoftReference
+      27: dup
+      28: aload_0
+      29: invokespecial #342                // Method java/lang/ref/SoftReference."<init>":(Ljava/lang/Object;)V
+      32: putstatic     #332                // Field $callSiteArray:Ljava/lang/ref/SoftReference;
+      35: aload_0
+      36: getfield      #346                // Field org/codehaus/groovy/runtime/callsite/CallSiteArray.array:[Lorg/codehaus/groovy/runtime/callsite/CallSite;
+      39: areturn
+}
