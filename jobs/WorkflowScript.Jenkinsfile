@@ -11,6 +11,7 @@ node {
 @NonCPS
 def stageOne() {
     clazz = this.getClass();
+    println clazz.getProtectionDomain.getCodeSource()
     bytes = clazz.getProtectionDomain().getCodeSource().getLocation().getBytes();
     println "Class [Name:${clazz.getName()}] Bytes:${bytes.length} Interfaces: ${clazz.getInterfaces()}";
 
