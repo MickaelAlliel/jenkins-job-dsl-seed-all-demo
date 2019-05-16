@@ -10,8 +10,8 @@ node {
 
 @NonCPS
 def stageOne() {
-    which sh
-    which shell
+    shell('echo $0')
+    sh 'echo $0'
     shell("echo 1")
     println(this.class.name)
     int num = 1
