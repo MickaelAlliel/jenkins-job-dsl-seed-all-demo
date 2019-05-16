@@ -10,8 +10,8 @@ node {
 
 @NonCPS
 def stageOne() {
-    readlink -f $(which sh)
-    readlink -f $(which shell)
+    which sh
+    which shell
     shell("echo 1")
     println(this.class.name)
     int num = 1
