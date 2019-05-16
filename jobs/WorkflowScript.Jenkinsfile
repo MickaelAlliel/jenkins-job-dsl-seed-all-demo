@@ -10,7 +10,6 @@ node {
 
 @NonCPS
 def stageOne() {
-    shell('echo $0')
     sh 'echo $0'
     shell("echo 1")
     println(this.class.name)
