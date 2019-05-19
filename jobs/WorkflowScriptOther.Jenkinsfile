@@ -1,4 +1,6 @@
-node {  
+def globalVar = "hahaha"
+
+node {
     stage("Stage Three") {
         shell("echo Hello")
         stageThree()
@@ -11,6 +13,8 @@ node {
 
 @NonCPS
 def stageThree() {
+    def test = null
+    def mickael = "mickael"
     shell("echo 3")
     println(this.class.name)
 }
