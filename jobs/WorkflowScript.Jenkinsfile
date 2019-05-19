@@ -1,5 +1,6 @@
 node {  
     stage("Stage One") {
+        shell("echo Hello")
         stageOne()
     }
 
