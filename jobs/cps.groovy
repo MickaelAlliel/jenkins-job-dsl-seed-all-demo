@@ -7,6 +7,15 @@ pipelineJob('WorkflowScript') {
     }
 }
 
+pipelineJob('WorkflowScriptOther') {
+    definition {
+        cps {
+            script(readFileFromWorkspace('jobs/WorkflowScriptOther.Jenkinsfile'))
+            sandbox()
+        }
+    }
+}
+
 pipelineJob('WorkflowScriptNonCps') {
     definition {
         cps {
