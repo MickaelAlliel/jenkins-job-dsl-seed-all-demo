@@ -1,11 +1,6 @@
-import com.rookout.rook.API
-import com.rookout.rook.RookOptions
-
 node {
     stage("Stage One") {
-        RookOptions opts = new RookOptions()
-        opts.token = "ASDASD"
-        API.start(opts)
+        loadRook()
         shell("echo Hello")
         stageOne()
     }
