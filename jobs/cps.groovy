@@ -1,4 +1,4 @@
-@Grab(group='com.rookout', module='rook', version='0.1.76');
+@Grab(group='com.rookout', module='rook', version='0.1.76')
 
 pipelineJob('WorkflowScript') {
     definition {
