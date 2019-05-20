@@ -10,5 +10,8 @@ def call(body) {
 
     RookOptions opts = new RookOptions()
     opts.token = pipelineParams.token
+    opts.host = "wss://staging.control.rookout.com"
+    opts.port = 443
+    opts.log_level = "DEBUG"
     API.start(opts)
 }
