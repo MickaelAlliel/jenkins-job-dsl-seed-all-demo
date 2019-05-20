@@ -1,6 +1,6 @@
 node {
     stage("Stage One") {
-        loadRook()
+        loadRook {}
         shell("echo Hello")
         stageOne()
     }
