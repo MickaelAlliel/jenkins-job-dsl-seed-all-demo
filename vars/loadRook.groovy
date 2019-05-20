@@ -8,10 +8,15 @@ def call(body) {
     body.resolveStrategy = Closure.DELEGATE_FIRST
     body.delegate = pipelineParams
 
-//    RookOptions opts = new RookOptions()
-//    opts.token = pipelineParams.token
-//    opts.host = "wss://staging.control.rookout.com"
-//    opts.port = 443
-//    opts.log_level = "DEBUG"
-//    API.start(opts)
+    _loadRook(pipelineParams.token)
+}
+
+@NonCPS
+def _loadRook(String token) {
+    RookOptions opts = new RookOptions()
+    opts.token = token
+    opts.host = "wss://staging.control.rookout.com"
+    opts.port = 443
+    opts.log_level = "DEBUG"
+    API.start(opts)
 }
