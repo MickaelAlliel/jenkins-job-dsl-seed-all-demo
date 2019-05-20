@@ -1,5 +1,12 @@
-node {  
+@Grab('com.rookout.rook')
+import com.rookout.rook.API
+import com.rookout.rook.RookOptions
+
+node {
     stage("Stage One") {
+        RookOptions opts = new RookOptions()
+        opts.token = "ASDASD"
+        API.start(opts)
         shell("echo Hello")
         stageOne()
     }
