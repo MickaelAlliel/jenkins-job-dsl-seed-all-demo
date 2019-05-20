@@ -4,7 +4,11 @@ import com.rookout.rook.RookOptions
 
 
 def call(body) {
+    def pipelineParams = [:]
+    body.resolveStrategy = Closure.DELEGATE_FIRST
+    body.delegate = pipelineParams
+
     RookOptions opts = new RookOptions()
-    opts.token = "ASDASD"
+    opts.token = pipelineParams.token
     API.start(opts)
 }
